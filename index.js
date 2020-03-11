@@ -20,7 +20,7 @@ massive({
     .catch(err => console.log(err));
 
 app.get('/api/products', ctrl.getAll);
-app.get('/api/product/:id', ctrl.getOne);
+app.get('/api/products/:id', ctrl.getOne);
 app.put('/api/products/:id', ctrl.update);
 app.post('/api/products', ctrl.create);
 app.delete('/api/products/:id', ctrl.delete)
